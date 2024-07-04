@@ -1,0 +1,7 @@
+<nav class="d-flex">
+    @for (item of socialMedia; track $index) {
+        <a [href]="item.link" target="_blank">
+            <img [src]="item.icon">
+        </a>
+    }
+</nav>

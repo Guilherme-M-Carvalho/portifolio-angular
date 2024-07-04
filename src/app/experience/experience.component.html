@@ -1,0 +1,53 @@
+<div class="row experiences" style="padding-top: 96px; z-index: 2;">
+    <div class="col-12">
+        <div class="area-experience first mb-3">
+            <span class="export-variable">export</span>
+            <span class="prefix-variable m-2">class</span>
+            <span class="name-variable">Experience</span>
+            <span class="object-variable m-2">{{ "{" }}</span>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="area-experience" style="margin-left: 32px;">
+            <span class="prefix-variable">public</span>
+            <span class="name-attribuite m-2">currentLevel</span>
+            <span class="equal-variable">=</span>
+            <span class="value-string m-2">"Pleno"</span>
+        </div>
+        <div class="area-experience mb-5" style="margin-left: 32px;">
+            <span class="prefix-variable">public</span>
+            <span class="name-attribuite m-2">timeExperience</span>
+            <span class="equal-variable">=</span>
+            <span class="value-string m-2">"2+ anos"</span>
+        </div>
+        @for(item of experiences; track $index){
+            <div class="content-experience mb-5" [style]="((experiences.length - 1) == $index) || item?.hide ? 'margin-bottom: 0px !important': ''">
+                <div class="area-experience prevent-select">
+                    <fa-icon [icon]="item.hide ? faChevronRight : faChevronDown" (click)="handleToggle($index)"></fa-icon>
+                    <span class="name-method">{{ item.method }}</span>
+                    <span class="keys-method">{{"(){"}}</span>
+                </div>
+                @if(!item.hide){
+                    <div class="area-experience my-0" style="margin-left: 32px;">
+                        <span class="keys-method">return</span>
+                        <span class="parentheses-method m-2">(</span>
+                    </div>
+                    <p class="h3" style="margin-left: 64px;">{{ item.company + " - " + item.office }}</p>
+                    <p class="h4" style="margin-left: 64px;">{{ item.startDate + " - " + (item.endDate ?? "Presente") }}</p>
+                    <p class=" h6" style="margin-left: 64px;">{{ item.desc }}</p>
+                    <div class="area-experience my-0" style="margin-left: 32px;">
+                        <span class="parentheses-method m-2">)</span>
+                    </div>
+                }
+                <div class="area-experience prevent-select">
+                    <span class="keys-method">{{"}"}}</span>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="col-12">
+        <div class="area-experience first">
+            <span class="object-variable">{{ "}" }}</span>
+        </div>
+    </div>
+</div>

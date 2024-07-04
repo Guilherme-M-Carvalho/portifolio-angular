@@ -1,0 +1,19 @@
+<div class="area-slider mt-5">
+    <span class="prefix-variable m-2">const</span>
+    <span class="name-variable">TECHS</span>
+    <span class="equal-variable m-2">=</span>
+    <span class="object-variable">[</span>
+</div>
+<div class="logos mx-2">
+    <div class="logos-slide">
+        @for (item of techs; track $index) {
+            <div class="content-tech">
+                <img [src]="item.icon" [alt]="item.name">
+                <span>{{ item.name }}</span>
+            </div>
+        }
+    </div>
+</div>
+<div class="area-slider">
+    <span class="object-variable m-2">]</span>
+</div>

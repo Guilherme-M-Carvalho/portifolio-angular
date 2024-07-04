@@ -1,0 +1,46 @@
+.area-experience.first span{
+    font-size: 1.6rem;
+}
+
+
+.area-experience{
+    position: relative;
+}
+.area-experience fa-icon{
+    position: absolute;
+    left: -19px;
+    top: 4px;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    padding-right: 4px;
+}
+
+.area-experience:hover fa-icon{
+    opacity: 1;
+}
+
+.content-experience .h6{
+    color: #878686;
+    font-size: 1.1rem;
+    font-weight: 450;
+}
+
+.content-experience .h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content-experience .h4{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fafafa;
+}
+
+.content-experience{
+    padding-left: 32px;
+}

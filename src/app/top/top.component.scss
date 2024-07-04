@@ -1,0 +1,95 @@
+.img{
+    min-width: 50%;
+    aspect-ratio: 1/1;
+    width: fit-content;
+}
+img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+    .perfil {
+        flex-direction: column;
+        align-items: center !important;
+    }
+  }
+
+.button-cv{
+    background: var(--btn-bg);
+    padding-inline: 64px;
+    color: var(--primary-0);
+    font-weight: 700;
+    font-size: 1.3rem;
+    border-radius:28px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.title-text{
+    font-size: 4rem;
+    font-weight: 600;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.desc-text{
+    color: #878686;
+    font-size: 1.1rem;
+    font-weight: 450;
+}
+
+.txt-animated{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fafafa;
+}
+
+.txt-animated span{
+    position: relative;
+}
+
+.txt-animated span::before{
+    content: "";
+    color: #fafafa;
+    animation: texts 10s infinite;
+}
+
+.txt-animated span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #fafafa;
+    right: -10px;
+    animation: cursor .8s infinite, digit 10s steps(15) infinite;
+    width: calc(100% + 18px);
+    background: var(--primary-0);
+}
+
+@keyframes digit {
+    10%, 15%, 20%, 25%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    50%,100%{
+        width: calc(100% + 18px);
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 2px solid transparent;
+    }
+}
+
+@keyframes texts {
+    0%, 50%{
+        content: "Desenvolvedor Full Stack";
+    }
+    51%, 100%{
+        content: "Programador Pleno";
+    }
+
+}

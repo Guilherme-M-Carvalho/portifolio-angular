@@ -1,1 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --export-variable: #c586c0;
+    --prefix-variable: #3783d6;
+    --name-variable: #4ec9b0;
+    --equal-variable: #fafafa;
+    --object-variable: #fdd600;
+    --name-method: #dcdc9d;
+    --keys-method: #da70cb;
+    --parentheses-method: #1a9fff;
+    --value-string: #ce9178;
+    --name-attribuite: #9cdcfe;
+    --primary-0: #151623;
+    --primary-20: #222331;
+    --hero-bg: linear-gradient(-54deg, var(--primary-0) -23%, var(--primary-20), var(--primary-0) 65%);
+    --btn-bg: linear-gradient(-54deg, #fd7e14 -23%, #df44e7, #fd7e14 65%);
+    --text-gradient: radial-gradient(circle farthest-corner at center center, #df44e7 0%, #fd7e14 100%)
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+html{
+    background: var(--primary-0) no-repeat;
+}
+
+body {
+    background: var(--hero-bg);
+    overflow-y: auto;
+    background-repeat: no-repeat;
+    z-index: -2;
+    position: relative;
+}
+
+body::after{
+    content: "";
+    position: absolute;
+    height: 6rem;
+    width: 100%;
+    background: linear-gradient(0deg, var(--primary-0), #0000);
+    bottom: 0;
+    z-index: -1;
+}
+
+.prefix-variable{
+    color: var(--prefix-variable);
+}
+
+.name-variable{
+    color: var(--name-variable);
+}
+.equal-variable{
+    color: var(--equal-variable);
+}
+
+.export-variable{
+    color: var(--export-variable);
+}
+
+.object-variable{
+    color: var(--object-variable);
+}
+
+.name-method{
+    color: var(--name-method);
+}
+.keys-method{
+    color: var(--keys-method);
+}
+.parentheses-method{
+    color: var(--parentheses-method);
+}
+.value-string{
+    color: var(--value-string);
+}
+.name-attribuite{
+    color: var(--name-attribuite);
+}
+
+.prefix-variable, .name-variable, .equal-variable, .object-variable, .export-variable, .name-method, .keys-method, .parentheses-method, .value-string,.name-attribuite{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
