@@ -64,14 +64,15 @@ img{
     height: 100%;
     border-left: 2px solid #fafafa;
     right: -10px;
-    animation: cursor .8s infinite, digit 10s steps(15) infinite;
+    animation: cursor .8s infinite;
+    animation: digit 10s steps(15) infinite;
     width: calc(100% + 18px);
     background: var(--primary-0);
 }
 
 @keyframes digit {
     10%, 15%, 20%, 25%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-        width: 0;
+        width: 0px;
     }
     50%,100%{
         width: calc(100% + 18px);
