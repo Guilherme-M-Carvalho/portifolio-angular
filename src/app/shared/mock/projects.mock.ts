@@ -1,5 +1,6 @@
 import { Project } from "../project.model";
 import { TECHSCARV } from "./techs-carv.mock";
+import { TECHSWEMOVIES } from "./techs-wemovies.mock";
 
 export const PROJECTS: Project[] = [
     {
@@ -15,11 +16,11 @@ export const PROJECTS: Project[] = [
         desc: `
         Este projeto consiste na criação de um site de e-commerce simplificado, desenvolvido para demonstrar habilidades em front-end e consumo de API. O site é composto por três módulos principais: Home, Carrinho e Compra. Este projeto destaca minha capacidade de desenvolver uma aplicação web funcional, integrando-se com APIs e gerenciando estados de maneira eficaz.
         `,
-        git: "https://github.com/Guilherme-M-Carvalho/carv",
+        git: "https://github.com/Guilherme-M-Carvalho/teste-react",
         img: "/assets/projects/wemovies.png",
         name: "WeMovies",
         tag: "we-movies",
-        techs: [...TECHSCARV, ...TECHSCARV, ...TECHSCARV, ...TECHSCARV],
+        techs: [...TECHSWEMOVIES, ...TECHSWEMOVIES, ...TECHSWEMOVIES, ...TECHSWEMOVIES],
         url: "https://teste-react-iota-five.vercel.app"
     }
 ]
