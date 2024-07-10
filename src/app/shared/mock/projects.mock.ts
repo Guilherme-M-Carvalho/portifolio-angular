@@ -1,5 +1,6 @@
 import { Project } from "../project.model";
 import { TECHSCARV } from "./techs-carv.mock";
+import { TECHSLEARNINGENGLISH } from "./techs-learningenglish.mock";
 import { TECHSWEMOVIES } from "./techs-wemovies.mock";
 
 export const PROJECTS: Project[] = [
@@ -22,5 +23,16 @@ export const PROJECTS: Project[] = [
         tag: "we-movies",
         techs: [...TECHSWEMOVIES, ...TECHSWEMOVIES, ...TECHSWEMOVIES, ...TECHSWEMOVIES],
         url: "https://teste-react-iota-five.vercel.app"
+    },
+    {
+        desc: `
+        Este projeto consiste na criação de um jogo educativo para aprender inglês, desenvolvido para demonstrar habilidades em design de interação e programação de jogos. Este projeto destaca minha capacidade de criar uma experiência interativa envolvente, onde os usuários podem praticar habilidades linguísticas de forma divertida, além de demonstrar minha competência em desenvolver jogos educativos funcionais que incentivam o aprendizado ativo da língua inglesa.
+        `,
+        git: "https://github.com/Guilherme-M-Carvalho/jogo-ingles",
+        img: "/assets/projects/ingles.png",
+        name: "Aprendendo Inlgês",
+        tag: "learning-english",
+        techs: [...TECHSLEARNINGENGLISH, ...TECHSLEARNINGENGLISH, ...TECHSLEARNINGENGLISH, ...TECHSLEARNINGENGLISH],
+        url: "https://jogo-ingles.vercel.app/"
     }
 ]
