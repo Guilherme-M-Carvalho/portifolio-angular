@@ -1,0 +1,50 @@
+<div class="row projects" style="padding-top: 96px; z-index: 2;">
+    <div class="area-project">
+        <span class="prefix-variable">&lt;projects></span>
+    </div>
+    @for (item of projects; track $index) {
+        <div class="area-experience" style="margin-left: 32px;">
+            <span class="prefix-variable">&lt;{{item.tag}}></span>
+        </div>
+        <div class="row my-3" style="padding-left: 64px;">
+            <div class="col-md-6 col-sm-12 col-img">
+                <div class="card">
+                    <b></b>
+                    <img [src]="item.img">
+                    <div class="content">
+                        <p class="title">{{item.name}}</p>
+                        <ul class="sci">
+                            @if(item.url){
+                                <li>
+                                    <a [href]="item.url" target="_blank">
+                                        <fa-icon [icon]="faEarthAmericas"></fa-icon>
+                                    </a>
+                                </li>
+                            }
+                            <li>
+                                <a [href]="item.git" target="_blank">
+                                    <fa-icon [icon]="faGithub"></fa-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="title-project mt-2">
+                    {{ item.name }}
+                </div>
+                <p class="desc-text mt-1 mb-0">
+                    {{ item.desc }}
+                </p>
+            </div>
+            <app-slider-techs [techs]="item.techs"></app-slider-techs>
+        </div>
+        <div class="area-experience" style="margin-left: 32px;">
+            <span class="prefix-variable">&lt;/{{item.tag}}></span>
+        </div>
+    }
+    <div class="area-project mb-3">
+        <span class="prefix-variable">&lt;/projects></span>
+    </div>
+</div>

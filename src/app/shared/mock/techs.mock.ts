@@ -81,4 +81,12 @@ export const TECHS: Tech[] = [
         icon: "/assets/icons/jquery.png",
         name: "jQuery"
     },
+    {
+        icon: "/assets/icons/gsap.png",
+        name: "GSAP"
+    },
+    {
+        icon: "/assets/icons/owl.png",
+        name: "Owl Carousel"
+    },
 ]

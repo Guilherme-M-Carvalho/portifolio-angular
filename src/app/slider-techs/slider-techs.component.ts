@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Tech } from '../shared/tech.model';
 import { TECHS } from '../shared/mock/techs.mock';
 
@@ -11,10 +11,8 @@ import { TECHS } from '../shared/mock/techs.mock';
 })
 export class SliderTechsComponent implements OnInit {
 
-  public techs: Tech[]= [...TECHS, ...TECHS]
+  @Input() public techs: Tech[]= [...TECHS, ...TECHS]
 
   ngOnInit(): void {
-    const copy = document.querySelector(".logos-slide")?.cloneNode(true) as any
-    document.querySelector(".logos")?.appendChild(copy)
   }
 }
