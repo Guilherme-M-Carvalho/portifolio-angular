@@ -2,12 +2,22 @@ import { Experience } from "../experience.model";
 
 export const EXPERIENCES: Experience[] = [
     {
+        company: "Metasix Tecnologia",
+        office: "Desenvolvedor de sistemas sênior",
+        desc: `Desempenho um papel estratégico no desenvolvimento de software, atuando na definição de arquiteturas robustas e escaláveis, liderança técnica e tomada de decisões de engenharia. Sou responsável pela documentação técnica, definição de padrões e boas práticas, além da implementação de soluções complexas no front-end e no back-end. Garanto a qualidade, performance e manutenibilidade das aplicações, assegurando que as soluções entregues estejam alinhadas às necessidades do negócio e às expectativas dos clientes.`,
+        startDate: "21/10/2024",
+        techs: [],
+        endDate: undefined,
+        method: "renderSeniorPositionAttributes"
+    },
+    {
+        hide: true,
         company: "R2SIS Tecnologia",
         office: "Desenvolvedor Full Stack Pleno",
         desc: `Desempenho um papel integral no desenvolvimento de software, desde a concepção da arquitetura e engenharia de software, passando pela documentação e análise de requisitos, até a programação final. Atuo tanto no front-end quanto no back-end, garantindo que as soluções atendam plenamente às expectativas e necessidades dos clientes em cada projeto.`,
         startDate: "01/06/2024",
         techs: [],
-        endDate: undefined,
+        endDate: "18/10/2024",
         method: "renderMidLevelPositionAttributes"
     },
     {

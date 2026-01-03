@@ -12,13 +12,13 @@
             <span class="prefix-variable">public</span>
             <span class="name-attribuite m-2">currentLevel</span>
             <span class="equal-variable">=</span>
-            <span class="value-string m-2">"Pleno"</span>
+            <span class="value-string m-2">"Sênior"</span>
         </div>
         <div class="area-experience mb-5" style="margin-left: 32px;">
             <span class="prefix-variable">public</span>
             <span class="name-attribuite m-2">timeExperience</span>
             <span class="equal-variable">=</span>
-            <span class="value-string m-2">"2+ anos"</span>
+            <span class="value-string m-2">{{ experienceLabel }}</span>
         </div>
         @for(item of experiences; track $index){
             <div class="content-experience mb-5" [style]="((experiences.length - 1) == $index) || item?.hide ? 'margin-bottom: 0px !important': ''">
